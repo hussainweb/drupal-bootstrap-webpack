@@ -1,0 +1,39 @@
+{
+  "name": "drupal-bootstrap-sass-webpack",
+  "version": "0.0.1",
+  "description": "This is a template for using webpack with the Drupal Bootstrap theme's SASS starterkit.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=dev webpack",
+    "watch": "NODE_ENV=dev webpack --watch",
+    "production": "NODE_ENV=production webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "drupal8",
+    "bootstrap",
+    "webpack"
+  ],
+  "author": "hussainweb",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.1",
+    "webpack-command": "^0.4.1",
+    "webpack-notifier": "^1.6.0"
+  },
+  "dependencies": {}
+}
