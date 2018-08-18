@@ -1,10 +1,12 @@
 const path = require('path');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const ManifestPlugin = require('webpack-manifest-plugin');
 // const WebpackChunkHash = require('webpack-chunk-hash');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const isProduction = process.env.NODE_ENV === 'production';
 const useSourcemaps = !isProduction;
@@ -131,23 +133,15 @@ const webpackConfig = {
       contentImage: path.join(__dirname, 'screenshot.png'),
       alwaysNotify: true
     }),
-  ]
+  ],
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({})
+    ]
+  }
 };
 
 if (isProduction) {
-  webpackConfig.plugins.push(
-      new webpack.optimize.UglifyJsPlugin()
-  );
-
-  // passes these options to all loaders
-  // but we should really pass these ourselves
-  webpackConfig.plugins.push(
-      new webpack.LoaderOptionsPlugin({
-        minimize: true,
-        debug: false
-      })
-  );
-
   webpackConfig.plugins.push(
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify('production')
