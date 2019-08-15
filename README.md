@@ -2,7 +2,7 @@
 
 This is an example of using webpack in Drupal theme. Specifically, this repository contains the SASS starterkit of the [Drupal Bootstrap](https://www.drupal.org/project/bootstrap) theme. It is modified to work with webpack. The detailed change list is below (to-do).
 
-This starterkit is taken from version [8.x-3.17 of the bootstrap theme](https://www.drupal.org/project/bootstrap/releases/8.x-3.17). I'll try to keep this updated but changes should not be significant.
+This starterkit is taken from version [8.x-3.20 of the bootstrap theme](https://www.drupal.org/project/bootstrap/releases/8.x-3.20). I'll try to keep this updated but changes should not be significant.
 
 ## Usage
 
@@ -24,6 +24,10 @@ $ ./set-theme-name.sh mytheme
 3. Run `npm install`.
 4. Start working on your theme. The SCSS files are in `assets/scss` and JavaScript files are in `assets/js` directories. You may modify other directories as you wish.
 5. Run `npm run dev` to run webpack in development mode. You may also watch for changes using `npm run watch`. For production mode, run `npm run production`.
+
+### Additional notes
+
+You do not need to follow all the steps from the official [sub-theming guide](https://drupal-bootstrap.org/api/bootstrap/docs!Sub-Theming.md/group/sub_theming/8.x-3.x). This template already takes care of getting the [drupal-bootstrap-styles](https://github.com/unicorn-fail/drupal-bootstrap-styles) and putting them in the correct location for you. You only need to follow the steps above.
 
 ## Changes from starterkit
 

@@ -1,3 +1,4 @@
-Use this directory to override template, theme and \[pre\]process functions.
+This directory is used to implement various core, contrib, Bootstrap and custom
+templates.
 
-Please refer to the @link registry Theme Registry @endlink topic for more info.
+Please refer to the [Templates](<!-- @url templates -->) topic for more info.
