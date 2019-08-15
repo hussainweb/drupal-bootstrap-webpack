@@ -6,9 +6,11 @@
 Below are instructions on how to create a Bootstrap sub-theme using a Sass
 preprocessor.
 
-- [Prerequisites](#prerequisites)
-- [Additional Setup](#setup)
-- [Overrides](#overrides)
+- [Sass Starterkit](#sass-starterkit)
+  - [Prerequisites](#prerequisites)
+  - [Additional Setup {#setup}](#additional-setup-setup)
+  - [Overrides {#overrides}](#overrides-overrides)
+      - [See also:](#see-also)
 
 ## Prerequisites
 - Read the @link getting_started Getting Started @endlink and
@@ -54,6 +56,6 @@ name, using a different extension of course).
 - @link templates Templates @endlink
 - @link plugins Plugin System @endlink
 
-[Bootstrap Framework]: https://getbootstrap.com/docs/3.3/
+[Bootstrap Framework]: https://getbootstrap.com/docs/3.4/
 [Bootstrap Framework Source Files]: https://github.com/twbs/bootstrap-sass
 [Sass]: http://sass-lang.com
