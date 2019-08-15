@@ -10,5 +10,11 @@
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
 
+// Set the directory for the theme root used to locate images, fonts etc.
+$theme-root: '../..';
+
+// Set other directories relative to theme root.
+$image-path: '#{$theme-root}/images';
+
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
