@@ -31,6 +31,7 @@
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.16.1",
     "webpack-command": "^0.4.1",
     "webpack-notifier": "^1.6.0"
