@@ -103,10 +103,12 @@ const webpackConfig = {
     //   'window.jQuery': 'jquery',
     // }),
 
-    // new CopyWebpackPlugin([
-    //   // copies to {output}/static
-    //   { from: './assets/images', to: 'images' }
-    // ]),
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     // copies to {output}/static
+    //     { from: './assets/images', to: 'images' }
+    //   ]
+    // }),
 
     // new webpack.optimize.CommonsChunkPlugin({
     //   name: [
