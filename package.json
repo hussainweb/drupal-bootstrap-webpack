@@ -22,7 +22,7 @@
   "license": "GPL-2.0",
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
-    "clean-webpack-plugin": "^0.1.19",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",

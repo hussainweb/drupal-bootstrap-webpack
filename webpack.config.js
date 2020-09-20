@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const ManifestPlugin = require('webpack-manifest-plugin');
 // const WebpackChunkHash = require('webpack-chunk-hash');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
@@ -126,7 +126,7 @@ const webpackConfig = {
       chunkFilename: '[id].css',
     }),
 
-    new CleanWebpackPlugin('build/**/*.*'),
+    new CleanWebpackPlugin,
 
     new WebpackNotifierPlugin({
       title: 'Drupal Bootstrap Webpack',
