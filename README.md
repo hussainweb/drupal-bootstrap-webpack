@@ -2,7 +2,7 @@
 
 This is an example of using webpack in Drupal theme. Specifically, this repository contains the generic starterkit of the [Drupal Bootstrap](https://www.drupal.org/project/bootstrap) theme and the SASS based assets from [drupal-bootstrap-styles](https://github.com/unicorn-fail/drupal-bootstrap-styles). It is modified to work with webpack. The detailed change list is below (to-do).
 
-This starterkit is taken from version [8.x-3.20 of the bootstrap theme](https://www.drupal.org/project/bootstrap/releases/8.x-3.20). I'll try to keep this updated but changes should not be significant.
+This starterkit is taken from version [8.x-3.23 of the bootstrap theme](https://www.drupal.org/project/bootstrap/releases/8.x-3.23). I'll try to keep this updated but changes should not be significant.
 
 ## Usage
 
