@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const WebpackChunkHash = require('webpack-chunk-hash');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const useSourcemaps = !isProduction;
@@ -137,8 +137,9 @@ const webpackConfig = {
     }),
   ],
   optimization: {
+    minimize: true,
     minimizer: [
-      new UglifyJsPlugin({})
+      new TerserPlugin()
     ]
   }
 };
